@@ -10,7 +10,7 @@ filename <- "getdata_dataset.zip"
 
 #download zip file, download mode binary, only if it does not already exist
 if(!file.exists(destfile)){
-download.file(fileURL,destfile,mode='wb', method='auto')}
+download.file(fileURL,filename,mode='wb', method='auto')}
 ##
 if (!file.exists(filename)){
   download.file(fileURL, filename, method="curl")
